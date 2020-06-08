@@ -12,6 +12,7 @@ spec:
       targetPort: 8848
   selector:
     app: nacos
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: ConfigMap
