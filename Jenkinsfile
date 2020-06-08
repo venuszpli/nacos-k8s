@@ -25,8 +25,6 @@ pipeline {
     stage('Deploy Nacos') {
       steps {
           sh "ls -lah; pwd"
-          sh "cd nacos-k8s"
-          sh "ls -lah; pwd"
           sh "chmod +x quick-startup.sh"
           sh "./quick-startup.sh"
             }
